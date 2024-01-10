@@ -11,43 +11,88 @@
             HeightRequest="115" />
 
         <Label
-            IsVisible="false"
+            x:Name="NameApp"
             Text="Número da Sorte"
             TextColor="#00ab37"
             VerticalOptions="Center"
             HorizontalOptions="Center" 
-            Margin="0, 10, 0, 0"/>
+            Margin="0, 20, 0, 120"/>
 
-        <Label
+        <VerticalStackLayout x:Name="ContainerLuckNumbers" IsVisible="false">
+
+            <Label
             Text="Novo Jogo Gerado!"
             HorizontalOptions="Center"
             Margin="0,20,0,0"/>
 
-        <HorizontalStackLayout Spacing="20" HorizontalOptions="Center" Margin="0, 70">
-            <Label 
-                Text="01" 
-                TextColor="#00ab37"
-                FontSize="24"/>
-            <Label 
-                Text="01" 
-                TextColor="#00ab37"
-                FontSize="24"/>
-            <Label 
-                Text="01" 
-                TextColor="#00ab37"
-                FontSize="24"/>
-            <Label 
-                Text="01" 
-                TextColor="#00ab37"
-                FontSize="24"/>
-            <Label 
-                Text="01" 
-                TextColor="#00ab37"
-                FontSize="24"/>
-            <Label 
-                Text="01" 
-                TextColor="#00ab37"
-                FontSize="24"/>
+        <HorizontalStackLayout Spacing="3" HorizontalOptions="Center" Margin="0, 70">
+            <Border 
+                Stroke="#00ab37"
+                Padding="10, 5"
+                StrokeShape="RoundRectangle 10"
+                >
+                <Label 
+                    x:Name="n1"
+                    Text="" 
+                    TextColor="#00ab37"
+                    FontSize="24"/>
+            </Border>
+            <Border 
+                Stroke="#00ab37"
+                Padding="10, 5"
+                StrokeShape="RoundRectangle 10"
+                >
+                <Label 
+                    x:Name="n2"
+                    Text="" 
+                    TextColor="#00ab37"
+                    FontSize="24"/>
+            </Border>
+            <Border 
+                Stroke="#00ab37"
+                Padding="10, 5"
+                StrokeShape="RoundRectangle 10"
+                >
+                <Label 
+                    x:Name="n3"
+                    Text="" 
+                    TextColor="#00ab37"
+                    FontSize="24"/>
+            </Border>
+            <Border 
+                Stroke="#00ab37"
+                Padding="10, 5"
+                StrokeShape="RoundRectangle 10"
+                >
+                <Label 
+                    x:Name="n4"
+                    Text="" 
+                    TextColor="#00ab37"
+                    FontSize="24"/>
+            </Border>
+            <Border 
+                Stroke="#00ab37"
+                Padding="10, 5"
+                StrokeShape="RoundRectangle 10"
+                >
+                <Label 
+                    x:Name="n5"
+                    Text="" 
+                    TextColor="#00ab37"
+                    FontSize="24"/>
+            </Border>
+            <Border 
+                Stroke="#00ab37"
+                Padding="10, 5"
+                StrokeShape="RoundRectangle 10"
+                >
+                <Label 
+                    x:Name="n6"
+                    Text="" 
+                    TextColor="#00ab37"
+                    FontSize="24"/>
+            </Border>
+
         </HorizontalStackLayout>
 
         <Label
@@ -56,7 +101,10 @@
             Margin="0,0,0,50"/>
 
 
-        <Button 
+        </VerticalStackLayout>
+    
+        <Button
+            Clicked="OnGenerateLuckNumber"
             Text="Gerar Jogo da Mega" 
             HorizontalOptions="Center"
             Margin="0, 15, 0, 150"/>
