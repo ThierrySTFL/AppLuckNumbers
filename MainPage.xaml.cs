@@ -30,12 +30,12 @@ public partial class MainPage : ContentPage
             }
         }
 
-        n1.Text = luckNumbers[0].ToString();
-		n2.Text = luckNumbers[1].ToString();
-		n3.Text = luckNumbers[2].ToString();
-		n4.Text = luckNumbers[3].ToString();
-		n5.Text = luckNumbers[4].ToString();
-		n6.Text = luckNumbers[5].ToString();
+        n1.Text = luckNumbers[0].ToString("D2");
+		n2.Text = luckNumbers[1].ToString("D2");
+		n3.Text = luckNumbers[2].ToString("D2");
+		n4.Text = luckNumbers[3].ToString("D2");
+		n5.Text = luckNumbers[4].ToString("D2");
+		n6.Text = luckNumbers[5].ToString("D2");
         
     }
 
